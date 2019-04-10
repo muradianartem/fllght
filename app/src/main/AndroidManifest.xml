@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="ldemyanenko.com.flashlight">
+    package="tambowskip.com.flashlight">
 
     <application
         android:allowBackup="true"
@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"
+        <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-9296603406231808~1191834305"/>
+        <activity android:name="tambowskip.com.flashlight.MainActivity"
             android:taskAffinity=""
             android:excludeFromRecents="true"
             android:launchMode="singleTask"
@@ -20,10 +24,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SettingsActivity"
+        <activity android:name="tambowskip.com.flashlight.SettingsActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"/>
-        <receiver android:name=".MainActivity$FlashlightActionListener" />
-        <receiver android:name=".MainActivity$WhiteScreeActionListener" />
+        <receiver android:name="tambowskip.com.flashlight.MainActivity$FlashlightActionListener" />
+        <receiver android:name="tambowskip.com.flashlight.MainActivity$WhiteScreeActionListener" />
     </application>
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-feature android:name="android.hardware.camera" />

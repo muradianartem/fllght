@@ -1,4 +1,4 @@
-package ldemyanenko.com.flashlight;
+package tambowskip.com.flashlight;
 
 import android.app.Activity;
 import android.app.NotificationManager;

@@ -1,7 +1,6 @@
-package ldemyanenko.com.flashlight;
+package tambowskip.com.flashlight;
 
 import android.app.Activity;
-import android.support.v7.app.AppCompatActivity;
 
 /**
  * Created by ldemyanenko on 16.03.2017.

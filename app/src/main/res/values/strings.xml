@@ -9,4 +9,5 @@
     <string name="error">Error</string>
     <string name="dont_support_message">Sorry, your device doesn\'t support flash light!</string>
     <string name="ok">OK</string>
+    <string name="button_back_setting">Submit</string>
 </resources>

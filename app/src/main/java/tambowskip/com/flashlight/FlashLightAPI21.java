@@ -1,4 +1,4 @@
-package ldemyanenko.com.flashlight;
+package tambowskip.com.flashlight;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -10,10 +10,7 @@ import android.hardware.camera2.CameraAccessException;
 import android.hardware.camera2.CameraManager;
 import android.media.MediaPlayer;
 import android.os.Build;
-import android.util.Log;
 import android.view.View;
-
-import java.util.List;
 
 /**
  * Created by ldemyanenko on 07.03.2017.

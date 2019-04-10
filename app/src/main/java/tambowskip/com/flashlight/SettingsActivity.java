@@ -1,4 +1,4 @@
-package ldemyanenko.com.flashlight;
+package tambowskip.com.flashlight;
 
 import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;

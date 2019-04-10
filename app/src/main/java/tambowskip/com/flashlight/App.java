@@ -1,8 +1,4 @@
-package ldemyanenko.com.flashlight;
-
-/**
- * Created by ldemyanenko on 07.03.2017.
- */
+package tambowskip.com.flashlight;
 
 import android.content.Context;
 import android.content.SharedPreferences;

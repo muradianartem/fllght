@@ -1,24 +1,15 @@
-package ldemyanenko.com.flashlight;
+package tambowskip.com.flashlight;
 
-import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.pm.PackageManager;
 import android.hardware.Camera;
-import android.hardware.camera2.CameraAccessException;
-import android.hardware.camera2.CameraManager;
 import android.media.MediaPlayer;
-import android.os.Build;
 import android.util.Log;
-import android.view.View;
 
-
-import java.io.Serializable;
 import java.util.List;
-
-import static android.content.Context.NOTIFICATION_SERVICE;
 
 /**
  * Created by 8760w on 07.03.2017.

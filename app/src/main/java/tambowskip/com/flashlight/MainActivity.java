@@ -1,4 +1,4 @@
-package ldemyanenko.com.flashlight;
+package tambowskip.com.flashlight;
 
 import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
@@ -7,8 +7,8 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -16,11 +16,20 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+import com.google.firebase.analytics.FirebaseAnalytics;
+
+
 
 public class MainActivity extends AppCompatActivity {
     private static final String KEY_FLASHLIGHT_ON = "KEY_FLASHLIGHT_ON";
     private static final String BROADCAST_ACTION = "BROADCAST_ACTION";
     private static final String KEY_FLASH_BUTTON_CLICK = "KEY_FLASH_BUTTON_CLICK";
+
+    private AdView mAdView;
+    private FirebaseAnalytics mFirebaseAnalytics;
 
     private App appSettings;
     private FlashLightInterface flashlight;
@@ -42,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
 //        }
         appSettings=App.getInstance(getApplicationContext());
         flashlight=App.getFlashlightInstance(getApplicationContext());
+        // Obtain the FirebaseAnalytics instance.
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
         flashlight.getCamera();
         if(savedInstanceState!=null){
@@ -102,8 +113,11 @@ public class MainActivity extends AppCompatActivity {
         Log.d("broadcastReceiver","register");
 
 
+        MobileAds.initialize(this, "ca-app-pub-9296603406231808~1191834305");
 
-
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
     }
 
     private void checkSettingsAndTurnOnFlashlightOnStart() {
@@ -145,6 +159,7 @@ public class MainActivity extends AppCompatActivity {
         setBlackWhiteScreen();
         setupFlashlightTypeIcons();
         toggleButtonImage();
+
     }
 
     private void setupFlashlightTypeIcons() {

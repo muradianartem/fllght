@@ -2,6 +2,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </LinearLayout>
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -11,13 +15,10 @@
         android:id="@+id/showStatusBar"
         android:layout_gravity="center_vertical|left"
 
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical|right"
-            android:text="@string/status_bar"/>
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/status_bar"/>
+
     </FrameLayout>
     <View
         android:layout_width="match_parent"
@@ -33,12 +34,8 @@
         <CheckBox
             android:id="@+id/switchSound"
             android:layout_gravity="center_vertical|left"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical|right"
             android:text="@string/play_sounds"/>
     </FrameLayout>
     <View
@@ -55,12 +52,8 @@
         <CheckBox
             android:id="@+id/turnOnAtStartup"
             android:layout_gravity="center_vertical|left"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical|right"
             android:text="@string/on_on_startup"/>
     </FrameLayout>
     <View
@@ -77,14 +70,30 @@
         <CheckBox
             android:id="@+id/turnOffAtExit"
             android:layout_gravity="center_vertical|left"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical|right"
             android:text="@string/off_on_destroy"/>
     </FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="10dp"
+        android:background="@color/black">
+    </View>
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button_back_setting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="fill_horizontal"
+            android:background="@drawable/btn_color"
+            android:text="@string/button_back_setting" />
+
+    </LinearLayout>
 <View
     android:layout_width="match_parent"
     android:layout_height="match_parent"
