@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\8760w\.android\build-cache\99db528cb4a00393acf69c26d567f5431883c86b\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Projects\Flashlight\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3a2c2111e805c2004086897509edeac4768152ca\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\8760w\.android\build-cache\4ccfed37f75f9a6dcbbc52926b06eae459ebf810\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
+        <dex dex="C:\Projects\Flashlight\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3bc054e36065e10d2ad5a78fb2087818bb05b9ca\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\8760w\.android\build-cache\4165a8c89df844c52f6e765eaa9dba5700560767\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
+        <dex dex="C:\Projects\Flashlight\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_5c6dc250f0bc506c4b425329876ffbf889925d7b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\8760w\.android\build-cache\b251b0bff8d6ec311a654e7c974895162d4fc71b\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
+        <dex dex="C:\Projects\Flashlight\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e7c4d4f61d4ce9ac07a547d5e9b92e43bd5cb6d3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Projects\Flashlight\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cfd97ce3d0da2375287b662d60154cbd8a1ece37">
+        <dex dex="C:\Projects\Flashlight\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_5dc6875cb0a3a60bcdd5efe9bff0dc7b375c1df8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\8760w\.android\build-cache\4ea51ef6b4af6f82b75c508e6a9e5832a92f0a4d\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
+        <dex dex="C:\Projects\Flashlight\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_afa4e08c54b89c245aec07523eca5c98260d765b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\8760w\.android\build-cache\5d6df515b8ecf52f1fbfac1335fbd2a38671c023\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="702d339bc0a81d21354cd7e2cf2b67225fa4a16c">
+        <dex dex="C:\Projects\Flashlight\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9cabdeacba511b9fb0c422cb3ed5e6d1d541a655\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\8760w\.android\build-cache\946144bbb6e0e920972c0a1babe1354e5676817f\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cb454b52545859ed2f24a6c01366805b0fa04b22">
+        <dex dex="C:\Projects\Flashlight\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a8987178611782a87442d59fb790c6baf8c12104\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\8760w\.android\build-cache\97ac96ae1686b282e02ea07bd30d5a5ca5e95187\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
+        <dex dex="C:\Projects\Flashlight\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_af711e6ed7577c267079aae59d1cae61cd39f3fc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Projects\Flashlight\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c323c36ecc68965c4cfb460f7721113d2b61ed03">
+        <dex dex="C:\Projects\Flashlight\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_e2bafcfac0e068933d1993c61ee7d734fca9a787\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\8760w\.android\build-cache\4446fdfa1ab6e6eab17a2a9198f7587925b642cc\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="810f41e5b7fd99f196ebeabe865ba2c54e7e76dc">
+        <dex dex="C:\Projects\Flashlight\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_827bf76e849ffcc97c1dfbf6cf9e5a360dd88a83\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.2.0\support-annotations-25.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
+        <dex dex="C:\Projects\Flashlight\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.2.0_30f64a62097eb8c494ea5c502ef2f487c2fe4581\classes.dex" />
+    </item>
+
+</items>
