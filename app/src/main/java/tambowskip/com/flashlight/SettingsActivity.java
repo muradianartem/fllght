@@ -1,9 +1,12 @@
 package tambowskip.com.flashlight;
 
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 
 /**
@@ -16,6 +19,7 @@ public class SettingsActivity extends AppCompatActivity {
     private CheckBox switchSound;
     private CheckBox turnOnAtStartup;
     private CheckBox turnOffAtExit;
+    private Button btnBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +31,16 @@ public class SettingsActivity extends AppCompatActivity {
         turnOnAtStartup=(CheckBox)findViewById(R.id.turnOnAtStartup);
         turnOffAtExit=(CheckBox)findViewById(R.id.turnOffAtExit);
         setupSettings();
+        final Intent intent = new Intent(this, MainActivity.class);
+        btnBack=(Button) findViewById(R.id.button_back_setting);
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                saveSettings();
+                startActivity(intent);
+            }
+        });
+
     }
 
     private void setupSettings() {
