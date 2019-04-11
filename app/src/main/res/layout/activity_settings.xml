@@ -1,108 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:fontFamily="@font/roboto"
+    android:orientation="vertical">
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@color/grey">
+
+        <ImageView
+            android:id="@+id/back_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_arrow_back_black_24dp"
+            android:layout_margin="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_gravity="fill_horizontal"
+            android:padding="11dp"
+            android:text="@string/settings"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            />
+
     </LinearLayout>
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp">
+        android:layout_margin="13dp">
 
-    <CheckBox
-        android:id="@+id/showStatusBar"
-        android:layout_gravity="center_vertical|left"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/status_bar"
+            android:textSize="16sp"
+            android:textColor="@color/white"
 
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/status_bar"/>
+            />
+
+        <CheckBox
+            android:id="@+id/showStatusBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
 
     </FrameLayout>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_margin="10dp"
-        android:background="@color/black">
-    </View>
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp">
+        android:layout_margin="13dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/play_sounds"
+            android:textSize="16sp"
+            android:textColor="@color/white"/>
 
         <CheckBox
             android:id="@+id/switchSound"
-            android:layout_gravity="center_vertical|left"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/play_sounds"/>
+            android:layout_gravity="center_vertical|right"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
     </FrameLayout>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_margin="10dp"
-        android:background="@color/black">
-    </View>
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp">
+        android:layout_margin="13dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/on_on_startup"
+            android:textSize="16sp"
+            android:textColor="@color/white"/>
 
         <CheckBox
             android:id="@+id/turnOnAtStartup"
-            android:layout_gravity="center_vertical|left"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/on_on_startup"/>
+            android:layout_gravity="center_vertical|right"
+
+            />
     </FrameLayout>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_margin="10dp"
-        android:background="@color/black">
-    </View>
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp">
+        android:layout_margin="13dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/off_on_destroy"
+            android:textSize="16sp"
+            android:textColor="@color/white"/>
 
         <CheckBox
             android:id="@+id/turnOffAtExit"
-            android:layout_gravity="center_vertical|left"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/off_on_destroy"/>
+            android:layout_gravity="center_vertical|right"/>
     </FrameLayout>
+
     <View
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_margin="10dp"
+        android:layout_height="match_parent"
         android:background="@color/black">
+
     </View>
-    <LinearLayout
-        android:layout_margin="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <Button
-            android:id="@+id/button_back_setting"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="fill_horizontal"
-            android:background="@drawable/btn_color"
-            android:text="@string/button_back_setting" />
-
-    </LinearLayout>
-<View
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/black">
-
-</View>
-
-
-
 
 
 </LinearLayout>

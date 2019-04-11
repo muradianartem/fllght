@@ -10,9 +10,6 @@ import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -20,6 +17,10 @@ import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
 import com.google.firebase.analytics.FirebaseAnalytics;
+
+//import android.view.Menu;
+//import android.view.MenuInflater;
+//import android.view.MenuItem;
 
 
 
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
     private AdView mAdView;
     private FirebaseAnalytics mFirebaseAnalytics;
 
+    private ImageView stnBtn;
     private App appSettings;
     private FlashLightInterface flashlight;
     private View view;
@@ -62,6 +64,15 @@ public class MainActivity extends AppCompatActivity {
         }
 
         mMainLayout=findViewById(R.id.mainLayout);
+
+        stnBtn = (ImageView) findViewById(R.id.settings);
+        stnBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view){
+                openSettingsActivity();
+            }
+        });
+
         mFlashlight=(ImageView) findViewById(R.id.flashlight);
         mFlashlight.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,7 +82,6 @@ public class MainActivity extends AppCompatActivity {
                 blackScreen =true;//
                 setBlackWhiteScreen();
                 toggleButtonImage();
-
             }
         });
         mScreen=(ImageView) findViewById(R.id.screen);
@@ -186,26 +196,26 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.main_menu, menu);
-        return true;
-    }
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        MenuInflater inflater = getMenuInflater();
+//        inflater.inflate(R.menu.main_menu, menu);
+//        return true;
+//    }
 
 
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle item selection
-        switch (item.getItemId()) {
-            case R.id.settings:
-                openSettingsActivity();
-                return true;
-            default:
-                return true;
-        }
-    }
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//        // Handle item selection
+//        switch (item.getItemId()) {
+//            case R.id.settings:
+//                openSettingsActivity();
+//                return true;
+//            default:
+//                return true;
+//        }
+//    }
 
     private void openSettingsActivity() {
         startActivity(new Intent(this,SettingsActivity.class));
